@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Input Assembler",
+    "description": "Collects and processes raw data from various sources (e.g., website crawls, analytics, market trends) into a standardized format for AI processing."
+  },
+  {
+    "name": "Context Pack",
+    "description": "Enriches assembled data with relevant contextual information, such as industry benchmarks, competitor analysis, and historical performance, for deeper AI insights."
+  },
+  {
+    "name": "Audit Modules",
+    "description": "A suite of specialized AI models (e.g., AI Visibility, Brand Trust, Semantic Structure) that analyze the Context Pack to generate specific SEO and brand intelligence scores and insights."
+  },
+  {
+    "name": "Output Surfaces",
+    "description": "Presents AI-generated scores, insights, issues, and recommendations through various user interfaces, including interactive dashboards and detailed reports."
+  }
+]

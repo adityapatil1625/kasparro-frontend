@@ -1,0 +1,16 @@
+{
+  "id": "brand-trust",
+  "score": 88,
+  "insights": [
+    "Your brand has a high sentiment score across social media platforms.",
+    "User reviews for your products are overwhelmingly positive."
+  ],
+  "issues": [
+    "There is a lack of transparency regarding your product's data sources.",
+    "Your 'About Us' page does not adequately establish founder credibility."
+  ],
+  "recommendations": [
+    "Create a dedicated page explaining your data sources and privacy policies.",
+    "Enhance your 'About Us' page with more detailed information about your team and their expertise."
+  ]
+}

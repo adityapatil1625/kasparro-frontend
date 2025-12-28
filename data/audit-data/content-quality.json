@@ -1,0 +1,16 @@
+{
+  "id": "content-quality",
+  "score": 75,
+  "insights": [
+    "Your blog posts are well-structured and have a good readability score.",
+    "Your content is frequently shared on social media."
+  ],
+  "issues": [
+    "Some of your older content is outdated and contains inaccurate information.",
+    "Your content lacks a consistent tone of voice across different channels."
+  ],
+  "recommendations": [
+    "Perform a content audit to identify and update or remove outdated content.",
+    "Develop and enforce a brand style guide for all content creators."
+  ]
+}

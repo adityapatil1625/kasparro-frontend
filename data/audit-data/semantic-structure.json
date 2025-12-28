@@ -1,0 +1,16 @@
+{
+  "id": "semantic-structure",
+  "score": 79,
+  "insights": [
+    "Your website uses a clear and logical heading structure (H1, H2, H3).",
+    "Your internal linking strategy effectively connects related content."
+  ],
+  "issues": [
+    "Structured data (Schema.org) is missing from key pages, such as product and article pages.",
+    "Your URLs are not always human-readable or descriptive."
+  ],
+  "recommendations": [
+    "Implement comprehensive Schema.org markup for all relevant content types.",
+    "Adopt a consistent and descriptive URL structure for all new content."
+  ]
+}

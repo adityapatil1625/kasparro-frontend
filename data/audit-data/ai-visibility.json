@@ -1,0 +1,16 @@
+{
+  "id": "ai-visibility",
+  "score": 85,
+  "insights": [
+    "Your brand is frequently mentioned in AI-generated search results for your core keywords.",
+    "The 'InputAssembler' seems to be correctly identifying your brand's key entities."
+  ],
+  "issues": [
+    "Your brand's visibility drops for long-tail keywords in AI-powered searches.",
+    "Some AI-generated summaries misrepresent your product's key features."
+  ],
+  "recommendations": [
+    "Create more detailed content targeting long-tail keywords to improve AI model's understanding.",
+    "Ensure your website's structured data is comprehensive and accurate."
+  ]
+}

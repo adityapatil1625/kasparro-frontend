@@ -1,0 +1,16 @@
+{
+  "id": "technical-health",
+  "score": 95,
+  "insights": [
+    "Your website has an excellent mobile-first responsive design.",
+    "Your server response times are consistently fast."
+  ],
+  "issues": [
+    "There are several broken internal links that lead to 404 pages.",
+    "Your sitemap.xml file is not up-to-date with your latest content."
+  ],
+  "recommendations": [
+    "Run a crawl of your website to identify and fix all broken links.",
+    "Ensure your sitemap.xml is automatically regenerated whenever new content is published."
+  ]
+}

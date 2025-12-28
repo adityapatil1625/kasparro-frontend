@@ -1,0 +1,16 @@
+{
+  "id": "authority-signals",
+  "score": 92,
+  "insights": [
+    "High-authority domains are frequently citing your brand's research.",
+    "Your brand is recognized as a key entity in your industry by major knowledge graphs."
+  ],
+  "issues": [
+    "Your executives' online presence and authority signals are weak.",
+    "Some low-quality domains are linking to your key landing pages."
+  ],
+  "recommendations": [
+    "Develop a thought leadership program for your key executives.",
+    "Use disavow tools to mitigate the impact of low-quality backlinks."
+  ]
+}

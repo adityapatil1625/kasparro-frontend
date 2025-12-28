@@ -1,0 +1,16 @@
+{
+  "id": "entity-coverage",
+  "score": 82,
+  "insights": [
+    "Your brand is well-represented as an entity in major knowledge graphs.",
+    "Your products are correctly associated with your brand entity."
+  ],
+  "issues": [
+    "Some of your key executives are not recognized as entities.",
+    "Your brand's relationship with partner companies is not well-defined in knowledge graphs."
+  ],
+  "recommendations": [
+    "Create detailed profiles for your key executives on relevant platforms.",
+    "Use structured data to explicitly define your brand's relationships with other entities."
+  ]
+}
