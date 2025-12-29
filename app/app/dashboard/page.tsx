@@ -6,6 +6,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { BrandSelector } from "@/components/dashboard/BrandSelector";
 import { useStore } from "@/store/useStore";
+import { CardSkeleton } from "@/components/CardSkeleton";
 
 export default function DashboardPage() {
   const { selectedBrand } = useStore();
@@ -58,10 +59,10 @@ export default function DashboardPage() {
 
           {loading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card title="AI Visibility Score" value="Loading..." />
-              <Card title="Trust / EEAT Score" value="Loading..." />
-              <Card title="Non-Branded Keyword Coverage" value="Loading..." />
-              <Card title="Last Audit Timestamp" value="Loading..." />
+              <CardSkeleton />
+              <CardSkeleton />
+              <CardSkeleton />
+              <CardSkeleton />
             </div>
           ) : snapshot ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

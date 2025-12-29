@@ -1,11 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/app/architecture/page": "app/app/architecture/page.js",
-  "/about/page": "app/about/page.js",
-  "/app/dashboard/page": "app/app/dashboard/page.js",
   "/api/snapshot/[brandId]/route": "app/api/snapshot/[brandId]/route.js",
+  "/about/page": "app/about/page.js",
+  "/app/audit/page": "app/app/audit/page.js",
   "/api/brands/route": "app/api/brands/route.js",
-  "/platform/page": "app/platform/page.js",
+  "/app/dashboard/page": "app/app/dashboard/page.js",
+  "/app/architecture/page": "app/app/architecture/page.js",
   "/page": "app/page.js",
-  "/app/audit/page": "app/app/audit/page.js"
+  "/platform/page": "app/platform/page.js"
 }
