@@ -7,6 +7,7 @@ import { Card } from "@/components/Card";
 import { BrandSelector } from "@/components/dashboard/BrandSelector";
 import { useStore } from "@/store/useStore";
 import { CardSkeleton } from "@/components/CardSkeleton";
+import { motion } from "framer-motion";
 
 export default function DashboardPage() {
   const { selectedBrand } = useStore();
@@ -30,12 +31,17 @@ export default function DashboardPage() {
         const res = await fetch(`/api/snapshot/${selectedBrand}`);
         if (res.ok) {
           const snapshotData = await res.json();
-          setSnapshot(snapshotData);
+          setTimeout(() => {
+            setSnapshot(snapshotData);
+            setLoading(false);
+          }, 500); // a small delay to prevent flashing
         } else {
           setSnapshot(null);
+          setLoading(false);
         }
+      } else {
+        setLoading(false);
       }
-      setLoading(false);
     }
     getSnapshot();
   }, [selectedBrand]);
@@ -65,12 +71,18 @@ export default function DashboardPage() {
               <CardSkeleton />
             </div>
           ) : snapshot ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card title="AI Visibility Score" value={snapshot.aiVisibilityScore} unit="/100" />
-              <Card title="Trust / EEAT Score" value={snapshot.trustEEATScore} unit="/100" />
-              <Card title="Non-Branded Keyword Coverage" value={snapshot.nonBrandedKeywordCoverage} unit="%" />
-              <Card title="Last Audit Timestamp" value={new Date(snapshot.lastAuditTimestamp).toLocaleDateString()} />
-            </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Card title="AI Visibility Score" value={snapshot.aiVisibilityScore} unit="/100" />
+                <Card title="Trust / EEAT Score" value={snapshot.trustEEATScore} unit="/100" />
+                <Card title="Non-Branded Keyword Coverage" value={snapshot.nonBrandedKeywordCoverage} unit="%" />
+                <Card title="Last Audit Timestamp" value={new Date(snapshot.lastAuditTimestamp).toLocaleDateString()} />
+              </div>
+            </motion.div>
           ) : (
             <div className="flex items-center justify-center h-full text-gray-500">
               Select a brand to view the snapshot.
