@@ -1,6 +1,6 @@
 
 import { create } from "zustand"
-import { getFirstBrandName } from "@/lib/brands"
+import { getFirstBrandId } from "@/lib/brands"
 
 interface State {
   selectedBrand: string
@@ -10,7 +10,7 @@ interface State {
 }
 
 export const useStore = create<State>((set) => ({
-  selectedBrand: getFirstBrandName(),
+  selectedBrand: getFirstBrandId(),
   setBrand: (selectedBrand) => set({ selectedBrand }),
   selectedModule: "content-quality",
   setModule: (selectedModule) => set({ selectedModule })

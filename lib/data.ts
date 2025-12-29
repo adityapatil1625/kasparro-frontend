@@ -27,8 +27,8 @@ export async function loadBrands(): Promise<Brand[]> {
 }
 
 // Mock dashboard snapshot data
-export async function loadDashboardSnapshot(): Promise<DashboardSnapshot> {
-  const filePath = path.join(process.cwd(), 'data', 'dashboard-snapshot.json');
+export async function loadDashboardSnapshot(brandId: string): Promise<DashboardSnapshot> {
+  const filePath = path.join(process.cwd(), 'data', `${brandId}-snapshot.json`);
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
