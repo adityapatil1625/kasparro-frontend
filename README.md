@@ -15,7 +15,7 @@ This repository contains the frontend implementation for the Kasparro platform, 
 
 ## Live Demo
 
-(Instructions for deploying to Vercel and providing a link would go here)
+You can view the live demo here: [https://kasparro-frontend-iqma.vercel.app/](https://kasparro-frontend-iqma.vercel.app/)
 
 To deploy your own version:
 
