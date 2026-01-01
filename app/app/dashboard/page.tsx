@@ -102,7 +102,7 @@ export default function DashboardPage() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="space-y-6"
+              as="div" className="space-y-6"
             >
               {/* Status Badge */}
               <div className="flex items-center gap-3">
