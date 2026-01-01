@@ -28,8 +28,8 @@ export function AuditModuleDetail({ module }: AuditModuleDetailProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="space-y-6"
         >
+          <div className="space-y-6">
           {/* Header */}
           <div>
             <SectionTitle
@@ -158,6 +158,7 @@ export function AuditModuleDetail({ module }: AuditModuleDetailProps) {
               </div>
             </div>
           </motion.div>
+          </div>
         </motion.div>
       </div>
     </AnimatePresence>

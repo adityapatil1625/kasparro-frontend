@@ -2,7 +2,6 @@
 
 import { AuditModule } from "@/types";
 import { useStore } from "@/store/useStore";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ScoreBadge } from "@/components/ScoreBadge";

@@ -3,14 +3,15 @@ import { cn } from '@/lib/utils';
 
 interface StatCardProps {
   label: string;
-  value: string | number;
+  value: string | number | React.ReactNode;
   icon?: React.ReactNode;
   trend?: { direction: 'up' | 'down' | 'stable'; percentage: number };
   description?: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
-export function StatCard({ label, value, icon, trend, description, className }: StatCardProps) {
+export function StatCard({ label, value, icon, trend, description, className, children }: StatCardProps) {
   return (
     <div className={cn('p-6 rounded-lg border border-gray-200 dark:border-gray-800 bg-card hover:shadow-md transition-shadow', className)}>
       <div className="flex items-start justify-between">
@@ -39,6 +40,7 @@ export function StatCard({ label, value, icon, trend, description, className }: 
           </span>
         </div>
       )}
+      {children}
     </div>
   );
 }
