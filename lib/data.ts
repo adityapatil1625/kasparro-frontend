@@ -19,23 +19,26 @@ export async function loadAuditData(): Promise<AuditData> {
   return auditData;
 }
 
-// Mock brand data
+// Load brand data from JSON file
 export async function loadBrands(): Promise<Brand[]> {
   const filePath = path.join(process.cwd(), 'data', 'brands.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const brands: Brand[] = JSON.parse(fileContents);
+  return brands;
 }
 
-// Mock dashboard snapshot data
+// Load dashboard snapshot data for a specific brand
 export async function loadDashboardSnapshot(brandId: string): Promise<DashboardSnapshot> {
   const filePath = path.join(process.cwd(), 'data', `${brandId}-snapshot.json`);
   const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const snapshot: DashboardSnapshot = JSON.parse(fileContents);
+  return snapshot;
 }
 
-// Mock architecture data
+// Load architecture module data
 export async function loadArchitectureModules(): Promise<ArchitectureModule[]> {
   const filePath = path.join(process.cwd(), 'data', 'architecture.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const modules: ArchitectureModule[] = JSON.parse(fileContents);
+  return modules;
 }

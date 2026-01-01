@@ -1,17 +1,16 @@
+import { create } from 'zustand';
+import { getFirstBrandId } from '@/lib/brands';
 
-import { create } from "zustand"
-import { getFirstBrandId } from "@/lib/brands"
-
-interface State {
-  selectedBrand: string
-  setBrand: (b: string) => void
-  selectedModule: string
-  setModule: (m: string) => void
+interface StoreState {
+  selectedBrand: string;
+  setBrand: (brand: string) => void;
+  selectedModule: string;
+  setModule: (module: string) => void;
 }
 
-export const useStore = create<State>((set) => ({
+export const useStore = create<StoreState>((set) => ({
   selectedBrand: getFirstBrandId(),
-  setBrand: (selectedBrand) => set({ selectedBrand }),
-  selectedModule: "content-quality",
-  setModule: (selectedModule) => set({ selectedModule })
-}))
+  setBrand: (selectedBrand: string) => set({ selectedBrand }),
+  selectedModule: 'content-quality',
+  setModule: (selectedModule: string) => set({ selectedModule }),
+}));

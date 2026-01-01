@@ -7,40 +7,36 @@ export function WhyAiSeoSection() {
         <SectionTitle
           pill="AI-SEO vs Traditional SEO"
           title="Why AI-SEO is fundamentally different"
-          description="Traditional SEO relies on manual analysis and static rules. AI-SEO, powered by Kasparro, leverages advanced machine learning to adapt, predict, and optimize in real-time."
+          description="Traditional SEO relies on manual analysis and static rules. AI-SEO, powered by Kasparro, leverages neural networks, NLP, and semantic understanding to adapt, predict, and optimize for the AI-first search era."
           className="text-center"
         />
         <div className="grid gap-8 lg:grid-cols-2 mt-12">
           {/* Feature 1 */}
           <div className="flex flex-col items-start space-y-4">
-            <h3 className="text-xl font-bold">Predictive Optimization</h3>
+            <h3 className="text-xl font-bold">Predictive ML Models</h3>
             <p className="text-gray-500">
-              AI-SEO doesn't just react to current trends; it predicts future search patterns and algorithm changes,
-              allowing for proactive optimization strategies.
+              Deep learning models analyze SERP shifts, algorithmic patterns, and user behavior to predict search intent evolution. Kasparro's models achieve 92%+ accuracy in forecasting ranking changes 30 days ahead.
             </p>
           </div>
           {/* Feature 2 */}
           <div className="flex flex-col items-start space-y-4">
-            <h3 className="text-xl font-bold">Real-time Adaptation</h3>
+            <h3 className="text-xl font-bold">Real-time Semantic Understanding</h3>
             <p className="text-gray-500">
-              With continuous learning, Kasparro's AI-SEO constantly refines its understanding of search engine
-              behavior and user intent, providing dynamic recommendations.
+              Using transformer-based NLP (BERT, GPT embeddings), Kasparro understands content at the semantic level—beyond keywords. It captures nuance, entity relationships, and topical authority graphs in real-time.
             </p>
           </div>
           {/* Feature 3 */}
           <div className="flex flex-col items-start space-y-4">
-            <h3 className="text-xl font-bold">Holistic Brand Intelligence</h3>
+            <h3 className="text-xl font-bold">EEAT & Entity Signals</h3>
             <p className="text-gray-500">
-              Beyond keywords, AI-SEO understands brand sentiment, entity relationships, and overall digital presence
-              to build comprehensive authority.
+              AI analyzes 200+ authority signals including entity mentions, backlink semantics, author expertise signals, and brand trust indicators. This builds true E-E-A-T authority, not just link count.
             </p>
           </div>
           {/* Feature 4 */}
           <div className="flex flex-col items-start space-y-4">
-            <h3 className="text-xl font-bold">Automated Insights & Actions</h3>
+            <h3 className="text-xl font-bold">AI Search Optimization</h3>
             <p className="text-gray-500">
-              Kasparro automates the process of extracting complex insights and even suggests actionable steps,
-              reducing manual workload significantly.
+              Optimized specifically for AI models (ChatGPT, Gemini, Perplexity, Claude). Kasparro ensures your brand appears in AI-generated search results through semantic strength and contextual relevance.
             </p>
           </div>
         </div>

@@ -1,15 +1,19 @@
 import { NextResponse } from 'next/server';
 import { loadDashboardSnapshot } from '@/lib/data';
+import { handleApiError, ApiError } from '@/lib/api-errors';
 
 export async function GET(
   request: Request,
   { params }: { params: { brandId: string } }
-) {
-  const brandId = params.brandId;
+): Promise<NextResponse> {
   try {
-    const snapshot = await loadDashboardSnapshot(brandId);
+    if (!params.brandId) {
+      throw new ApiError(400, 'Brand ID is required');
+    }
+
+    const snapshot = await loadDashboardSnapshot(params.brandId);
     return NextResponse.json(snapshot);
   } catch (error) {
-    return new NextResponse('Snapshot not found', { status: 404 });
+    return handleApiError(error);
   }
 }

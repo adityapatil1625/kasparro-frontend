@@ -11,11 +11,20 @@ export interface Brand {
   name: string;
 }
 
+export interface Trend {
+  direction: 'up' | 'down' | 'stable';
+  percentage: number;
+}
+
 export interface DashboardSnapshot {
   aiVisibilityScore: number;
+  aiVisibilityTrend?: Trend;
   trustEEATScore: number;
+  trustEEATTrend?: Trend;
   nonBrandedKeywordCoverage: number;
-  lastAuditTimestamp: string; // Or Date, depending on how it's mocked
+  keywordTrend?: Trend;
+  lastAuditTimestamp: string;
+  auditStatus?: 'completed' | 'in-progress' | 'pending';
 }
 
 export interface AuditData {
@@ -25,5 +34,4 @@ export interface AuditData {
 export interface ArchitectureModule {
   name: string;
   description: string;
-  // Potentially add more properties if the architecture page needs structured data
 }

@@ -1,6 +1,10 @@
 {
   "aiVisibilityScore": 78,
+  "aiVisibilityTrend": { "direction": "down", "percentage": -3 },
   "trustEEATScore": 88,
-  "nonBrandedKeywordCoverage": 65,
-  "lastAuditTimestamp": "2025-12-25T14:30:00Z"
+  "trustEEATTrend": { "direction": "stable", "percentage": 0 },
+  "nonBrandedKeywordCoverage": 55,
+  "keywordTrend": { "direction": "up", "percentage": 6 },
+  "lastAuditTimestamp": "2025-12-24T14:30:00Z",
+  "auditStatus": "completed"
 }

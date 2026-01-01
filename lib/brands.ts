@@ -1,9 +1,10 @@
-
-import brandsData from "../data/brands.json"
+import brandsData from '../data/brands.json';
+import { Brand } from '@/types';
 
 export function getFirstBrandId(): string {
-  if (brandsData && brandsData.length > 0) {
-    return brandsData[0].id
+  const brands = brandsData as Brand[];
+  if (brands && brands.length > 0) {
+    return brands[0].id;
   }
-  return "brand-a" // Fallback in case brands.json is empty or malformed
+  return 'brand-a'; // Fallback in case brands.json is empty or malformed
 }
