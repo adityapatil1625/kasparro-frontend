@@ -3,7 +3,7 @@ import { loadDashboardSnapshot } from '@/lib/data';
 import { handleApiError, ApiError } from '@/lib/api-errors';
 
 export async function GET(
-  request: Request,
+  _request: Request,
   { params }: { params: { brandId: string } }
 ): Promise<NextResponse> {
   try {

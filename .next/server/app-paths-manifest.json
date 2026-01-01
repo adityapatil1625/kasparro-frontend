@@ -1,9 +1,3 @@
 {
-  "/app/architecture/page": "app/app/architecture/page.js",
-  "/platform/page": "app/platform/page.js",
-  "/app/audit/page": "app/app/audit/page.js",
-  "/about/page": "app/about/page.js",
-  "/api/brands/route": "app/api/brands/route.js",
-  "/api/snapshot/[brandId]/route": "app/api/snapshot/[brandId]/route.js",
-  "/app/dashboard/page": "app/app/dashboard/page.js"
+  "/page": "app/page.js"
 }
